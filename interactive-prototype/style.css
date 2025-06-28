@@ -1,0 +1,149 @@
+
+        :root {
+            --sand: #f4e2d8;
+            --water: #4fc3f7;
+            --sun: #ffd600;
+            --text: #2d2d2d;
+            --nav-bg: #fffbe6;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--sand) 60%, var(--water) 100%);
+            color: var(--text);
+        }
+        header {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            padding: 0.5rem 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--water);
+            letter-spacing: 2px;
+        }
+        ul.nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        ul.nav-links li a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        ul.nav-links li a:hover {
+            color: var(--sun);
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            background: linear-gradient(120deg, var(--water) 60%, var(--sand) 100%);
+            color: #fff;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--sun);
+            text-shadow: 1px 2px 8px rgba(0,0,0,0.12);
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+        .hero .hero-img {
+            width: 320px;
+            height: 180px;
+            background: rgba(255,255,255,0.3);
+            border: 2px dashed var(--sand);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--sand);
+            font-size: 1.1rem;
+            margin: 0 auto 2rem auto;
+        }
+        .cta-btn {
+            background: var(--sun);
+            color: var(--text);
+            border: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .cta-btn:hover {
+            background: #ffe066;
+        }
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .feature {
+            background: #fffbe6;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            flex: 1 1 260px;
+            min-width: 260px;
+            max-width: 320px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .feature .feature-img {
+            width: 100%;
+            height: 120px;
+            background: rgba(79,195,247,0.08);
+            border: 2px dashed var(--water);
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--water);
+            font-size: 1rem;
+        }
+        footer {
+            background: var(--nav-bg);
+            text-align: center;
+            padding: 1.2rem 0;
+            color: #888;
+            margin-top: 3rem;
+        }
+        @media (max-width: 800px) {
+            .features {
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }

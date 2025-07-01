@@ -1,5 +1,4 @@
-
-        :root {
+:root {
             --sand: #f4e2d8;
             --water: #4fc3f7;
             --sun: #ffd600;
@@ -58,6 +57,7 @@
             color: #fff;
             position: relative;
         }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -69,9 +69,13 @@
             margin-bottom: 2rem;
         }
         .hero .hero-img {
-            width: 320px;
-            height: 180px;
-            background: rgba(255,255,255,0.3);
+            background: 
+                linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+                url('assets/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            max-width: 800px;
+            height: 500px;
             border: 2px dashed var(--sand);
             border-radius: 12px;
             display: flex;
